@@ -1,7 +1,192 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+<head>
+    <title>Digital Portfolio | Dhani Frohling</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Dhani Kris Frohling">
+    <meta name="description" content="Dhani Frohling's digital portfolio">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        /* Overall layout styling. */
+        body {
+            min-width: 768px;
+            margin: 0;
+            border: 1px solid rgb(256, 256, 256);
+            font-family: Helvetica;
+            color: rgb(64, 64, 64);
+        }
+
+        header {
+            float: left; /* Float left to stop parent containing floating children from collpasing. */
+            width: 100%;
+        }
+        section {
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(63, 63, 63);
+        }
+        a:visited {
+            color: rgb(63, 63, 63);
+        }
+        h1 {
+            color: rgb(63, 63, 63);
+        }
+        h1.section {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Heading styling. */
+        h1#name {
+            float: left;
+            margin: 37px;
+            font-size: 1.5em;
+
+        }
+        nav {
+            float: right;
+            margin: 40px;
+        }
+        ul {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            float: right;
+            margin-left: 20px;
+            text-align: center;
+            list-style-type: none;
+        }
+        a.nav:hover {
+            text-decoration: underline;
+        }
+
+        /* Motto styling. */
+        section#motto {
+            margin-top: 106px;
+            margin-bottom: 25px;
+            background-color: rgb(37, 84, 152);
+        }
+        p#motto {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: 2em;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Selected works styling. */
+        h1#works {
+            margin-bottom: 15px;
+        }
+        div.row {
+            display: flex;
+            justify-content: center;
+        }
+        article.work {
+            margin: 5px;
+            border: 1px solid rgb(192, 192, 192);
+            width: 180px;
+        }
+
+        article.work:hover {
+            border: 1px solid rgb(63, 63, 63);
+        }
+
+        article.work img {
+            width: 100%;
+            height: auto;
+        }        
+        p.title {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: rgb(37, 84, 152);
+        }
+        p.desc {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /* About me styling. */
+        a#about {
+            color: rgb(37, 84, 152);
+        }
+        a#about:hover {
+            text-decoration: underline;
+        }
+        a#about:visited {
+            color: rgb(37, 84, 152);
+        }
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1 id="name">Dhani Frohling</h1>
+        <nav>
+            <ul>
+                <li><a class="nav" href="mailto:dhanifrohling@gmail.com">Contact</a></li>
+                <li><a class="nav" href="#about">About</a></li>
+                <li><a class="nav" href="#works">Works</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="motto">
+        <p id="motto">Passionate About Software Development</p>
+    </section>
+    <section id="works">
+
+        <h1 id="works" class="section">Selected Works</h1>
+
+        <div class="row">
+
+            <a target="_blank" href="https://github.com/dhanifrohling/mtschools.net">
+                <article class="work">
+                    <img src="images/mtschools_thumb.png" alt="MTSchools.net" width="600" height="400">
+                    <p class="title">MTSchools.net</p>
+                    <p class="desc">A music theory portal inspired by the site W3Schools.com</p>
+                </article>
+            </a>
+
+            <a target="_blank" href="https://github.com/dhanifrohling/PersonalOrganiser">
+                <article class="work">
+                    <img src="images/personal_organiser_thumb.png" alt="Personal Organiser" width="600" height="400">
+                    <p class="title">Personal Organiser</p>
+                    <p class="desc">An Android app for maintaining contacts, tasks, and events</p>
+                </article>
+            </a>
+        </div>
+        <div class="row">
+
+            <a target="_blank" href="https://github.com/dhanifrohling/FootballTipping">
+                <article class="work">
+                    <img src="images/football_tipping_thumb.png" alt="Football Tipping" width="600" height="400">
+                    <p class="title">Football Tipping</p>
+                    <p class="desc">A website for football tipping, written in ASP.NET</p>
+                </article>
+            </a>
+            <a target="_blank" href="https://github.com/dhanifrohling/HexGame">
+                <article class="work">
+                    <img src="images/hex_game_thumb.png" alt="Hex Game" width="600" height="400">
+                    <p class="title">Hex Game</p>
+                    <p class="desc">An implementation of the board game Hex, written in C++</p>
+                </article>
+            </a>
+        </div>
+
+        <hr>
+    </section>
+    <section id="about">
+        <h1 id="about" class="section">About Me</h1>
+        <p>I am a passionate developer with a diverse set of skills having just completed a degree in Computer Science. I have developed a variety of software application and worked in team-based projects including those governed by the software development lifecycle. I am agonizingly self-aware and always improving. Please feel free to contact me via <a id="about" href="mailto:dhanifrohling@gmail.com">email</a> or by visiting me on <a id="about" href="https://www.linkedin.com/in/dhanifrohling/">LinkedIn</a>.</p>
+        <hr>
+    </section>
 </body>
 </html>
